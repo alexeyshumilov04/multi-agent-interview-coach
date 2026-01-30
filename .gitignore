@@ -1,0 +1,94 @@
+# Игнорирование файлов ОС и редакторов
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.seed
+*.pid.lock
+*.tsbuildinfo
+
+# Папки зависимостей
+node_modules/
+bower_components/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+*.pem
+
+# Кэш и временные файлы
+.cache/
+.tmp/
+temp/
+
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Сборки и дистрибутивы
+build/
+dist/
+out/
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+*.msi
+*.zip
+*.tar.gz
+*.rar
+
+# Документация
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# Тестовые данные и отчеты
+coverage/
+.nyc_output/
+*.lcov
+.reports/
+*.xml
+
+# Системные файлы
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+*.mo
+*.pot

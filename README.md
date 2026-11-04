@@ -10,7 +10,7 @@
 ## Установка
 
 ```bash
-cd mega_agent_2
+cd multi-agent-interview-coach
 pip install -r requirements.txt
 cp .env.example .env
 # Отредактируйте .env и укажите AITUNNEL_API_KEY (ключ из AITUNNEL)
@@ -85,7 +85,7 @@ python -m src.main -p "Backend Developer" -g "Junior" -e "6 месяцев" -n "
 ## Структура проекта
 
 ```
-mega_agent_2/
+multi-agent-interview-coach/
 ├── .env.example
 ├── README.md
 ├── requirements.txt

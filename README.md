@@ -1,13 +1,20 @@
-# Multi-Agent Interview Coach
+# 🤖 Multi-Agent Interview Coach
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-0.2%2B-1C3C3C?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-0.3%2B-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![OpenAI Compatible](https://img.shields.io/badge/LLM-OpenAI%20Compatible-412991?style=flat-square&logo=openai&logoColor=white)
+![pytest](https://img.shields.io/badge/Tested%20with-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![AITUNNEL](https://img.shields.io/badge/LLM%20Provider-AITUNNEL-blueviolet?style=flat-square)
 
 Система из нескольких AI-агентов для проведения технического интервью: **Interviewer** ведёт диалог, **Observer** анализирует ответы «в кулуарах» и даёт инструкции, **Evaluator** формирует финальный фидбек. Реализованы скрытая рефлексия, контекст, адаптивность сложности и устойчивость к оффтопу/галлюцинациям.
 
-## Требования
+## 📋 Требования
 
-- Python 3.10+
-- Доступ к LLM через платформу **AITUNNEL** (OpenAI-совместимый API)
+- 🐍 Python 3.10+
+- 🔑 Доступ к LLM через платформу **AITUNNEL** (OpenAI-совместимый API)
 
-## Установка
+## ⚙️ Установка
 
 ```bash
 cd multi-agent-interview-coach
@@ -16,7 +23,7 @@ cp .env.example .env
 # Отредактируйте .env и укажите AITUNNEL_API_KEY (ключ из AITUNNEL)
 ```
 
-## Запуск
+## 🚀 Запуск
 
 Из корня проекта:
 
@@ -44,7 +51,7 @@ python -m src.main -p "Backend Developer" -g "Junior" -e "6 месяцев" -n "
 
 Завершение интервью: система сгенерирует финальный фидбек и сохранит лог.
 
-## Формат лога
+## 📝 Формат лога
 
 Файл: `interview_log_{номер_сценария}.json` (в `--log-dir`).
 
@@ -67,7 +74,7 @@ python -m src.main -p "Backend Developer" -g "Junior" -e "6 месяцев" -n "
 
 `internal_thoughts` — внутренние «мысли» агентов (Observer и Interviewer), не показываемые кандидату.
 
-## Финальный фидбек
+## 🧾 Финальный фидбек
 
 После команды завершения генерируется структурированный отчёт:
 
@@ -76,13 +83,13 @@ python -m src.main -p "Backend Developer" -g "Junior" -e "6 месяцев" -n "
 - **В. Soft Skills & Communication:** Clarity, Honesty, Engagement
 - **Г. Roadmap:** темы и технологии для подтягивания (опционально — ссылки)
 
-## Переменные окружения
+## 🔐 Переменные окружения
 
 - `AITUNNEL_API_KEY` — ключ от платформы, которая предоставляет доступ к LLM (обязателен для работы по умолчанию)
 
 Файл `.env` в корне проекта подхватывается автоматически (см. `.env.example`).
 
-## Структура проекта
+## 📂 Структура проекта
 
 ```
 multi-agent-interview-coach/
@@ -106,7 +113,7 @@ multi-agent-interview-coach/
     └── test_log_format.py
 ```
 
-## Тесты
+## 🧪 Тесты
 
 ```bash
 # из корня проекта
